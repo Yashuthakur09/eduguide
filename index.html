@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+    <body>
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+                <div class="logo">
+                    <span class="l1">EDU</span>
+                    <span class="l2">GUIDE</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Home </a>
+                    <a class="nav-item nav-link" href="#">Scholar Plans</a>
+                    <a class="nav-item nav-link" href="/register.html">Register</a>
+                    <a class="nav-item nav-link" href="/index.html">Contact us</a>
+                    <a class="nav-item nav-link" href="#">24x7 counselling</a>
+                  </div>
+                </div>
+            </nav>
+    </header>
+    <div class="middle">
+        <div class="left">
+            <div id="hide">
+                <div id="paragraphDisplay" class="section hidden" ></div>
+            </div>    
+        </div>
+        <div class="contact">
+            <div class="c1">
+                <p class="contact1"> Contact us</p>
+                <body>
+                    <select id="courseselect" onchange="showParagraphAndForm(this)">
+                      <option value="describe">What describes you the best:</option>
+                      <option value="International">International University</option>
+                      <option value="Indian">Indian University</option>
+                      <option value="Professional">Professional Investor</option>
+                      <option value="Potential">Potential Frechize</option>
+                      <option value="organ">Organisation intrested in partnership</option>
+                      <option value="Student">Student</option>
+                      <option value="Parent">Parent</option>
+                    </select>
+                    <div id="describe">
+                        <i class="fa fa-phone" style="font-size:20px;color:red"></i><b>Toll Free Number</b> :18003090103
+                        <br>
+                        <i class="fa fa-whatsapp" style="font-size:20px;color:green"></i> <b>Whatsapp</b> :<a href="">Click Here</a>
+                        <button type="submit" class="btn" style="float: right;">Submit</button>
+                    </div>
+                    <div id="InternationalForm" class="section hidden">
+                      <form  method="post">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <Label>Name of Institution:</Label>
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Your name:</Label>
+                                    </td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Designation</Label>
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Whatsapp Number :</Label>
+                                    </td>
+                                    <td>
+                                        <input type="number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Email ID:</Label>
+                                    </td>
+                                    <td>
+                                        <input type="Email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Institution website:</Label>
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="submit" class="btn" style="float: right;">Submit</button>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </form>
+                  </div>
+                    <div id="IndianForm" class="section hidden">
+                        <form  method="post">
+                          <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <Label>Name of Institution:</Label>
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Your name:</Label>
+                                    </td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Designation</Label>
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Whatsapp Number :</Label>
+                                    </td>
+                                    <td>
+                                        <input type="number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Email ID:</Label>
+                                    </td>
+                                    <td>
+                                        <input type="Email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <Label>Institution website:</Label>
+                                    </td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                               <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn" style="float: right;">Submit</button>
+                                </td>
+                               </tr>
+                            </tbody>
+                          </table>
+                        </form>
+                    </div>
+                    <div id="ProfessionalForm" class="section hidden">
+                      <form  method="post">
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <Label>Organisation Name:</Label>
+                                  </td>
+                                  <td>
+                                      <input type="text">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Your name:</Label>
+                                  </td>
+                                  <td><input type="text"></td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Designation</Label>
+                                  </td>
+                                  <td>
+                                      <input type="text">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Whatsapp Number :</Label>
+                                  </td>
+                                  <td>
+                                      <input type="number">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Email ID:</Label>
+                                  </td>
+                                  <td>
+                                      <input type="Email">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Institution website:</Label>
+                                  </td>
+                                  <td>
+                                      <input type="text">
+                                  </td>
+                              </tr>
+                             <tr><td colspan="2">
+                              <button type="submit" class="btn" style="float: right;">Submit</button>
+                          </td></tr>                         
+                          </tbody>
+                      </table>
+                  </form>
+                  </div>
+                  <div id="PotentialForm" class="section hidden">
+                    <form  method="post">
+                      <table>
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <Label>Organisation Name:</Label>
+                                  </td>
+                                  <td>
+                                      <input type="text">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Your name:</Label>
+                                  </td>
+                                  <td><input type="text"></td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Designation</Label>
+                                  </td>
+                                  <td>
+                                      <input type="text">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Whatsapp Number :</Label>
+                                  </td>
+                                  <td>
+                                      <input type="number">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Email ID:</Label>
+                                  </td>
+                                  <td>
+                                      <input type="Email">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <Label>Institution website:</Label>
+                                  </td>
+                                  <td>
+                                      <input type="text">
+                                  </td>
+                              </tr>
+                              <tr><td colspan="2">
+                                  <button type="submit" class="btn" style="float: right;">Submit</button>
+                              </td></tr>
+                          </tbody>
+                      </table>
+                  </form>
+                  </div>
+                  <div id="organForm" class="section hidden">
+                    <form  method="post">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <Label>Organisation Name:</Label>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <Label>Your name:</Label>
+                                </td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <Label>Designation</Label>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <Label>Whatsapp Number :</Label>
+                                </td>
+                                <td>
+                                    <input type="number">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <Label>Email ID:</Label>
+                                </td>
+                                <td>
+                                    <input type="Email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <Label>Institution website:</Label>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                           <tr>
+                            <td colspan="2">
+                                <button type="submit" class="btn" style="float: right;">Submit</button>
+                            </td>
+                           </tr>
+                        </tbody>
+                    </table>
+                  </form>
+                </div>
+                  <div id="ParentForm" class="section hidden">
+                    <form method="post">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td><label>Your name:</label></td>
+                            <td><input type="text"></td>
+                          </tr>
+                          <tr>
+                            <td><label>Whatsapp Number:</label></td>
+                            <td><input type="number"></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2"><button type="submit" class="btn" style="float: right;">Submit</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </form>    
+                    </div>  
+                </div>
+            </div>  
+        </div>
+    </div>
+    <footer>
+        <div class="f1">
+            <i class="fa fa-phone" style="font-size:20px;color:red"></i><b>Toll Free Number</b> :18003090103
+            <br>
+            <i class="fa fa-whatsapp" style="font-size:20px;color:green"></i> <b>Whatsapp</b> :<a href="">Click Here</a>
+        </div>
+        <div class="f2">
+            <p> <strong>India:</strong>3rd Floor Eva Co Op Housing Society Ltd Anand Nagar Opp Platform No.1 Entrance Vasai(W) Dist - Palghar Maharastra 401202</p>
+            <p><strong>Spain:</strong>Camu de Vallbidrera ai Tibidabo 05 - 08017 - Barcelona, Barcelona</p>
+            <p><strong>Dubai:</strong>City Tower 2 - 14th floor - Sheikh ZayedRd - Dubai, City Tower 2, #14-1401</p>
+            <p><strong>Singapore:</strong>12 Woodlands Square , #13-79 Woods Square Tower One, 737715</p>
+            <p><strong>United Kingdom:</strong>Senna building, Gorsuch PI, London E2 8JF</p>
+        </div>
+    </footer>
+    </body>
+    <script>
+        function showParagraphAndForm(courseselect) {
+            const value = courseselect.value;
+      
+            // Redirect for Student
+            if (value === "Student") {
+              window.location.href = "/register.html";
+              return;
+            }
+      
+            // Hide all paragraphs
+            const paragraphs = document.querySelectorAll('.info-paragraph');
+            paragraphs.forEach(p => p.style.display = 'none');
+      
+            // Show selected paragraph if it exists
+            const selectedPara = document.getElementById(value);
+            if (selectedPara) {
+              selectedPara.style.display = 'block';
+            }
+          }
+          //form
+        document.getElementById('courseselect').addEventListener('change', function () {
+            // Hide all sections first
+            document.querySelectorAll('#describe, #International, #Indian, #Parent , #Potential , #organ , #Professional , #Student').forEach(el => {
+              el.classList.add('hidden');
+            });
+        
+            // Show selected section
+            const selectedValue = this.value;
+            const target = document.getElementById(selectedValue);
+            if (target) {
+              target.classList.remove('hidden');
+            }
+          });
+
+          //paragraph
+          const paragraphMap = {
+            describe: "We'd love to Hear from you",
+            
+            International: "International University Partner with Eduguide - Focused on Student Success. At Eduguide, we collaborate with universities that prioritize student success—not just admissions. We seek partnerships with institutions that offer attractive scholarships, strong career pathways, and real opportunities for student growth. While we work with top universities in traditional study destinations, we also welcome emerging economies and new education hubs that can provide exceptional value to our students. If your institution shares our commitment to empowering students through scholarships and career-driven education, leave your details below. Our University Relations Team will review your information and connect with you to explore potential collaboration. We are fostering global education opportunities through collaboration and outreach.</span>",
+            
+            Indian: "Indian University At Eduguide, our focus is on helping Indian universities build meaningful international collaborations and expand global opportunities for their students. While we do not facilitate student enrollments in Indian institutions, we work closely with universities to connect them with global education networks, scholarships, and career pathways. Through our Scholar Program, we provide students with access to scholarships, internships, and profile-building opportunities at a subsidized cost, ensuring they are globally competitive. If your university shares our vision of empowering students beyond borders, leave your details below, and our University Partnerships Team will get in touch after review. You are shaping the future of national innovation and inclusive learning.</span>",
+            
+            Professional: "Professional Investor Invest in the Future of Global Education. Eduguide is redefining international education by prioritizing student success over mere admissions. Our model and technology ensure scholarships and career readiness, making us one of the leading names amongst the student community. We are highly selective with our investors, partnering only with those who align with our vision of ethical, high-impact education. If you share our commitment to transforming student futures and see value in a purpose-driven investment, we invite you to leave your details below. Our Investment Relations Team will review your information and connect with you if there's a potential alignment. Student interests always come first. You're making key decisions that shape the future of educational ventures.</span>",
+            
+            Potential: "Potential Franchise Exclusive Opportunity: Eduguide Franchise. Eduguide's franchise program is by invitation only, designed for businesses and professionals in the education industry who share our commitment to student success. We go beyond admissions and visas, focusing on scholarships, internships, and career readiness to truly impact students' futures. Our priority is to partner with those who uphold the highest standards and genuinely protect student interests. While we do review franchise requests, opportunities remain limited to those with a strong background in education. If you believe you align with our values, leave your details below, and our Franchise Development Team will reach out after review. You are exploring new ventures for growth and educational impact.</span>",
+            
+            organ: "Organization in Partnership Partner with a Trusted Leader in Student Success. At Eduguide, we are selective about who we collaborate with, ensuring that every partnership aligns with our commitment to student success. Our approach goes beyond admissions and visas—we focus on scholarships, internships, and career readiness, helping students thrive globally. We work with partners who share our values and uphold the highest standards in education and career development. If you believe your services align with our mission, please leave your details below. Our Vendor & Partner Relations Officer will review your information and get in touch to explore a meaningful collaboration. Student interests always come first.</span>",
+            
+            Parent: "Paren At Eduguide, we go beyond just admissions and visas—we focus on long-term student success. Our expert-led model ensures your child gets the best opportunities, from university selection to securing scholarships, internships, and career-building experiences. With one of the highest success rates in scholarships, our Scholar Program guarantees financial aid, profile enhancement, and global work readiness. We prepare students not just to study abroad but to thrive in their careers. Fill out the form below, and let's start building a future that goes beyond expectations. You play a vital role in supporting and guiding the next generation.</span>"
+        };
+        document.getElementById("paragraphDisplay").innerHTML = paragraphMap.International;
+            function showParagraphAndForm(select) {
+            const value = select.value;
+        
+            // Hide all sections first
+            document.querySelectorAll(".section").forEach(el => el.classList.add("hidden"));
+        
+            if (value && paragraphMap[value]) {
+              // Show paragraph
+              const paragraphDisplay = document.getElementById("paragraphDisplay");
+              paragraphDisplay.textContent = paragraphMap[value];
+              paragraphDisplay.classList.remove("hidden");
+        
+              // Show form if it exists
+              const form = document.getElementById(value + "Form");
+              if (form) {
+                form.classList.remove("hidden");
+              }
+            }
+          }
+        </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></body>
+</html>
